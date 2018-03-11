@@ -1,0 +1,148 @@
+/**
+ * Copyright (c) 2017, Cristina Ruiz Martin
+ * Carleton University, Universidad de Valladolid
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * 1. Redistributions of source code must retain the above copyright notice,
+ * this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright notice,
+ * this list of conditions and the following disclaimer in the documentation
+ * and/or other materials provided with the distribution.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ * SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ * INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ * POSSIBILITY OF SUCH DAMAGE.
+ */
+
+#include <iostream>
+#include <chrono>
+#include <algorithm>
+#include <string>
+
+#include <cadmium/modeling/coupled_model.hpp>
+#include <cadmium/modeling/ports.hpp>
+#include <cadmium/concept/coupled_model_assert.hpp>
+#include <cadmium/engine/pdevs_runner.hpp>
+
+#include "../atomics/answerPersonTask.hpp"
+#include "../atomics/answerPhoneTask.hpp"
+#include "../atomics/answerRadioTask.hpp"
+#include "../atomics/callByMultiplePhoneTask.hpp"
+#include "../atomics/callByPhoneTask.hpp"
+
+#include "../atomics/DevicePhone.hpp"
+#include "../atomics/DevicePhoneMultiple.hpp"
+#include "../atomics/DeviceRadio.hpp"
+#include "../atomics/DeviceTextClasNewBroken.hpp"
+#include "../atomics/DeviceTextClasNewRead.hpp"
+#include "../atomics/DeviceTextInbox.hpp"
+#include "../atomics/DeviceTextOutbox.hpp"
+
+#include "../atomics/doActionTask.hpp"
+
+#include "../atomics/filterCommandGenerator.hpp"
+
+#include "../atomics/filterDevicesMicroKeyboard.hpp"
+#include "../atomics/filterDevicesNetwork.hpp"
+#include "../atomics/filterDevicesState.hpp"
+
+#include "../atomics/filterNetworks.hpp"
+#include "../atomics/filterNetworksState.hpp"
+
+#include "../atomics/filterPeopleInLocation.hpp"
+#include "../atomics/filterPersonDeviceTypeFrom.hpp"
+#include "../atomics/filterPersonDeviceTypeMyId.hpp"
+#include "../atomics/filterPersonDeviceTypeTo.hpp"
+
+#include "../atomics/iestream.hpp"
+
+#include "../atomics/NetPhone.hpp"
+#include "../atomics/NetRadio.hpp"
+#include "../atomics/NetText.hpp"
+
+#include "../atomics/PeopleInLocation.hpp"
+#include "../atomics/PersonBehaviorRules.hpp"
+
+#include "../atomics/readTextOnDigitalDevice.hpp"
+#include "../atomics/readTextOnPaperDevice.hpp"
+#include "../atomics/sendCommandByRadio.hpp"
+#include "../atomics/sendCommandInPerson.hpp"
+#include "../atomics/sendTextTask.hpp"
+
+#include "../atomics/sinkDevices.hpp"
+#include "../atomics/sinkReceivingBehavior.hpp"
+#include "../atomics/sinkSendingBehavior.hpp"
+
+#include "../atomics/devicesSwitch.hpp"
+#include "../atomics/switchFace2Face.hpp"
+
+#include "../DESTimes/include/NDTime.hpp"
+
+#include "../data_structures/struct_types.hpp"
+#include "../data_structures/communication.hpp"
+#include "../data_structures/nep_model_enum_types.hpp"
+
+#include "../data_structures/decision_maker_behaviour_struct_types_V2.hpp"
+#include "../data_structures/decision_maker_behaviour_enum_types.hpp"
+
+using namespace std;
+
+using namespace nep_structures;
+using namespace nep_model_enum_types;
+
+using namespace decision_maker_behaviour_enum_types;
+using namespace decision_maker_behaviour_structures;
+
+using hclock=chrono::high_resolution_clock;
+
+/***** SETING INPUT PORTS FOR COUPLEDs *****/
+struct inp_generator : public cadmium::in_port<Command>{};
+struct inp_DevicesState : public cadmium::in_port<SetDeviceState>{};
+struct inp_NetworksState : public cadmium::in_port<SetNetworkState>{};
+struct inp_peopleInMyLocation : public cadmium::in_port<PeopleClassifiedByLocation>{};
+struct inp_atmosphere : public cadmium::in_port<Communication>{};
+struct inp_in_com : public cadmium::in_port<Communication>{};
+struct inp_network : public cadmium::in_port<Communication>{};
+struct inp_fromSpeaker : public cadmium::in_port<Communication>{};
+struct inp_fromScreen : public cadmium::in_port<Communication>{};
+struct inp_fromMicrophone : public cadmium::in_port<Communication>{};
+struct inp_fromKeyboard : public cadmium::in_port<Communication>{};
+struct inp_task : public cadmium::in_port<Communication>{};
+struct inp_task_CWD : public cadmium::in_port<CommandWithDevice>{};
+struct inp_setAnswer : public cadmium::in_port<Communication>{};
+struct inp_setSend : public cadmium::in_port<CommandWithDevice>{};
+struct inp_setDecide : public cadmium::in_port<TaskDeviceFinished>{};
+struct inp_decideInfo : public cadmium::in_port<Communication>{};
+struct inp_taskDeviceFinished : public cadmium::in_port<TaskDeviceFinished>{};
+struct inp_taskActionFinished : public cadmium::in_port<ActionFinished>{};
+
+/***** SETING OUTPUT PORTS FOR COUPLEDs *****/
+struct outp_taskDeviceFinished : public cadmium::out_port<TaskDeviceFinished>{};
+struct outp_taskActionFinished : public cadmium::out_port<ActionFinished>{};
+struct outp_myLocation : public cadmium::out_port<PeopleLocation>{};
+struct outp_toKeyboard : public cadmium::out_port<Communication>{};
+struct outp_toMicrophone : public cadmium::out_port<Communication>{};
+struct outp_toSpeaker : public cadmium::out_port<Communication>{};
+struct outp_toScreen : public cadmium::out_port<Communication>{};
+struct outp_atmosphere : public cadmium::out_port<Communication>{};
+struct outp_out_com : public cadmium::out_port<Communication>{};
+struct outp_network : public cadmium::out_port<Communication>{};
+struct outp_send_CWD : public cadmium::out_port<CommandWithDevice>{};
+struct outp_answer : public cadmium::out_port<Communication>{};
+struct outp_doAction : public cadmium::out_port<Action2Do>{};
+struct outp_send_com : public cadmium::out_port<Communication>{};
+struct outp_decide : public cadmium::out_port<Communication>{};
+struct outp_send_device : public cadmium::out_port<CommandWithDevice>{};
+struct outp_answer_device : public cadmium::out_port<Communication>{};
+struct outp_send_inperson : public cadmium::out_port<CommandWithDevice>{};
+struct outp_answer_inperson : public cadmium::out_port<Communication>{};

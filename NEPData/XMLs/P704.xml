@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<DecisionMakerBehaviour>
+  <Id>704</Id>
+  <Location>Loc_704</Location>
+  <ReactionTime>00:00:10:000</ReactionTime>
+  <AnswerPriorityType> DEVICE_PRIORITY </AnswerPriorityType>
+  <SendPriorityType> RECEPTION_ORDER </SendPriorityType>
+  <MyDevices>
+    <PriorityDevice priority="1" device="MOBILEPHONE" send2Multiple="true" sendSeparateFromReceive="false"/>
+    <PriorityDevice priority="1" device="RADIO_REMER" send2Multiple="true" sendSeparateFromReceive="false"/>
+  </MyDevices>
+  <TaskPrioritized>
+    <PriorityTask priority="1" task="ANSWER"/>
+    <PriorityTask priority="2" task="SEND"/>
+    <PriorityTask priority="3" task="DO_ACTION"/>
+  </TaskPrioritized>
+      <AnswerDevicePriority>
+      </AnswerDevicePriority>
+  <CommunicationRelations>
+    <RelationPerson id="702">
+      <Device device="LANDLINEPHONE"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="703">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="705">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="706">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="707">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+  </CommunicationRelations>
+  <MsgBehaviour>
+  </MsgBehaviour>
+  <ActionBehaviour>
+  </ActionBehaviour>
+</DecisionMakerBehaviour>

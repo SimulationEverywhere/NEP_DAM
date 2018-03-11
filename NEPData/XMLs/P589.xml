@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<DecisionMakerBehaviour>
+  <Id>589</Id>
+  <Location>Loc_589</Location>
+  <ReactionTime>00:00:10:000</ReactionTime>
+  <AnswerPriorityType> DEVICE_PRIORITY </AnswerPriorityType>
+  <SendPriorityType> RECEPTION_ORDER </SendPriorityType>
+  <MyDevices>
+    <PriorityDevice priority="1" device="TRANKI_GC" send2Multiple="false" sendSeparateFromReceive="false"/>
+  </MyDevices>
+  <TaskPrioritized>
+    <PriorityTask priority="1" task="ANSWER"/>
+    <PriorityTask priority="2" task="SEND"/>
+    <PriorityTask priority="3" task="DO_ACTION"/>
+  </TaskPrioritized>
+      <AnswerDevicePriority>
+      </AnswerDevicePriority>
+  <CommunicationRelations>
+    <RelationPerson id="326">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="590">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="829">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+  </CommunicationRelations>
+  <MsgBehaviour>
+  <MsgReceived from="326" content="Establish_Emergency_Level_0">
+ <Msg2Send to="590" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="326" content="Establish_Emergency_Level_1">
+ <Msg2Send to="590" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="326" content="Establish_Emergency_Level_2">
+ <Msg2Send to="590" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="326" content="Establish_Emergency_Level_3">
+ <Msg2Send to="590" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+  </MsgReceived>
+  </MsgBehaviour>
+  <ActionBehaviour>
+  </ActionBehaviour>
+</DecisionMakerBehaviour>

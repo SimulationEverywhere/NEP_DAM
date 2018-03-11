@@ -1,0 +1,138 @@
+<?xml version="1.0" ?>
+<DecisionMakerBehaviour>
+  <Id>372</Id>
+  <Location>Loc_372</Location>
+  <ReactionTime>00:00:10:000</ReactionTime>
+  <AnswerPriorityType> DEVICE_PRIORITY </AnswerPriorityType>
+  <SendPriorityType> RECEPTION_ORDER </SendPriorityType>
+  <MyDevices>
+    <PriorityDevice priority="1" device="TRANKI_GC" send2Multiple="false" sendSeparateFromReceive="false"/>
+    <PriorityDevice priority="1" device="MOBILEPHONE" send2Multiple="true" sendSeparateFromReceive="false"/>
+    <PriorityDevice priority="1" device="LANDLINEPHONE" send2Multiple="true" sendSeparateFromReceive="false"/>
+  </MyDevices>
+  <TaskPrioritized>
+    <PriorityTask priority="1" task="ANSWER"/>
+    <PriorityTask priority="2" task="SEND"/>
+    <PriorityTask priority="3" task="DO_ACTION"/>
+  </TaskPrioritized>
+      <AnswerDevicePriority>
+      </AnswerDevicePriority>
+  <CommunicationRelations>
+    <RelationPerson id="323">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="431">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="432">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="433">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="434">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="435">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="436">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="437">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="438">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="439">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="440">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="441">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="442">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="443">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="444">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="445">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="446">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="447">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="448">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="449">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="450">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="451">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="452">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="829">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+  </CommunicationRelations>
+  <MsgBehaviour>
+  <MsgReceived from="325" content="Establish_Emergency_Level_0">
+ <Msg2Send to="431" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="432" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="433" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="434" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="435" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="436" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="437" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="438" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="325" content="Establish_Emergency_Level_1">
+ <Msg2Send to="431" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="432" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="433" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="434" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="435" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="436" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="437" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="438" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="325" content="Establish_Emergency_Level_2">
+ <Msg2Send to="431" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="432" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="433" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="434" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="435" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="436" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="437" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="438" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="325" content="Establish_Emergency_Level_3">
+ <Msg2Send to="431" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="432" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="433" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="434" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="435" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="436" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="437" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="438" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+  </MsgReceived>
+  </MsgBehaviour>
+  <ActionBehaviour>
+  </ActionBehaviour>
+</DecisionMakerBehaviour>

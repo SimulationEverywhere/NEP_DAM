@@ -1,0 +1,366 @@
+<?xml version="1.0" ?>
+<DecisionMakerBehaviour>
+  <Id>326</Id>
+  <Location>Loc_326</Location>
+  <ReactionTime>00:00:10:000</ReactionTime>
+  <AnswerPriorityType> DEVICE_PRIORITY </AnswerPriorityType>
+  <SendPriorityType> RECEPTION_ORDER </SendPriorityType>
+  <MyDevices>
+    <PriorityDevice priority="1" device="TRANKI_GC" send2Multiple="false" sendSeparateFromReceive="false"/>
+    <PriorityDevice priority="1" device="FAX" send2Multiple="true" sendSeparateFromReceive="true"/>
+    <PriorityDevice priority="1" device="MOBILEPHONE" send2Multiple="true" sendSeparateFromReceive="false"/>
+    <PriorityDevice priority="1" device="LANDLINEPHONE" send2Multiple="true" sendSeparateFromReceive="false"/>
+  </MyDevices>
+  <TaskPrioritized>
+    <PriorityTask priority="1" task="ANSWER"/>
+    <PriorityTask priority="2" task="SEND"/>
+    <PriorityTask priority="3" task="DO_ACTION"/>
+  </TaskPrioritized>
+      <AnswerDevicePriority>
+      </AnswerDevicePriority>
+  <CommunicationRelations>
+    <RelationPerson id="16">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="323">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="526">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="530">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="532">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="534">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="536">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="538">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="540">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="542">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="544">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="547">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="549">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="551">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="553">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="555">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="557">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="559">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="561">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="563">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="565">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="567">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="569">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="571">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="573">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="575">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="577">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="581">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="583">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="585">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="587">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="589">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="591">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="593">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="595">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="597">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="599">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="601">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="603">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="607">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="609">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="611">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="613">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="615">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="617">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="619">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="621">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="623">
+      <Device device="TRANKI_GC"/>
+    </RelationPerson>
+    <RelationPerson id="829">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+  </CommunicationRelations>
+  <MsgBehaviour>
+  <MsgReceived from="16" content="Establish_Emergency_Level_0">
+ <Msg2Send to="526" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="530" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="532" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="534" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="536" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="538" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="540" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="542" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="544" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="547" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="549" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="551" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="553" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="555" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="557" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="559" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="561" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="563" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="565" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="567" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="569" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="571" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="573" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="575" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="577" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="581" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="583" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="585" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="587" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="589" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="591" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="593" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="595" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="597" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="599" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="601" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="603" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="607" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="609" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="611" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="613" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="615" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="617" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="619" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="621" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="623" content="Establish_Emergency_Level_0" compulsory="false" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="16" content="Establish_Emergency_Level_1">
+ <Msg2Send to="526" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="530" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="532" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="534" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="536" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="538" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="540" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="542" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="544" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="547" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="549" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="551" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="553" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="555" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="557" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="559" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="561" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="563" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="565" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="567" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="569" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="571" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="573" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="575" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="577" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="581" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="583" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="585" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="587" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="589" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="591" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="593" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="595" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="597" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="599" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="601" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="603" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="607" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="609" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="611" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="613" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="615" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="617" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="619" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="621" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="623" content="Establish_Emergency_Level_1" compulsory="false" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="16" content="Establish_Emergency_Level_2">
+ <Msg2Send to="526" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="530" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="532" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="534" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="536" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="538" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="540" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="542" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="544" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="547" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="549" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="551" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="553" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="555" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="557" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="559" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="561" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="563" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="565" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="567" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="569" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="571" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="573" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="575" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="577" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="581" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="583" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="585" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="587" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="589" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="591" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="593" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="595" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="597" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="599" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="601" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="603" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="607" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="609" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="611" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="613" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="615" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="617" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="619" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="621" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="623" content="Establish_Emergency_Level_2" compulsory="false" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="16" content="Establish_Emergency_Level_3">
+ <Msg2Send to="526" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="530" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="532" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="534" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="536" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="538" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="540" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="542" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="544" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="547" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="549" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="551" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="553" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="555" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="557" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="559" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="561" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="563" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="565" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="567" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="569" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="571" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="573" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="575" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="577" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="581" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="583" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="585" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="587" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="589" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="591" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="593" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="595" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="597" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="599" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="601" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="603" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="607" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="609" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="611" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="613" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="615" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="617" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="619" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="621" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+ <Msg2Send to="623" content="Establish_Emergency_Level_3" compulsory="false" send2Multiple="true"/>
+  </MsgReceived>
+  </MsgBehaviour>
+  <ActionBehaviour>
+  </ActionBehaviour>
+</DecisionMakerBehaviour>

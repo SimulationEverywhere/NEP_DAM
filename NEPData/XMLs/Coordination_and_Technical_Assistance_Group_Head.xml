@@ -1,0 +1,314 @@
+<?xml version="1.0" ?>
+<DecisionMakerBehaviour>
+  <Id>17</Id>
+  <Location>CommitteRoom</Location>
+  <ReactionTime>00:00:10:000</ReactionTime>
+  <AnswerPriorityType> DEVICE_PRIORITY </AnswerPriorityType>
+  <SendPriorityType> RECEPTION_ORDER </SendPriorityType>
+  <MyDevices>
+    <PriorityDevice priority="1" device="LANDLINEPHONE" send2Multiple="true" sendSeparateFromReceive="false"/>
+    <PriorityDevice priority="1" device="RADIO_REMAN" send2Multiple="true" sendSeparateFromReceive="false"/>
+  </MyDevices>
+  <TaskPrioritized>
+    <PriorityTask priority="1" task="ANSWER"/>
+    <PriorityTask priority="2" task="SEND"/>
+    <PriorityTask priority="3" task="DO_ACTION"/>
+  </TaskPrioritized>
+      <AnswerDevicePriority>
+      </AnswerDevicePriority>
+  <CommunicationRelations>
+    <RelationPerson id="819">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="809">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="637">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="638">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="639">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="640">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="641">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="642">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="643">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="644">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="645">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="646">
+      <Device device="LANDLINEPHONE"/>
+    </RelationPerson>
+    <RelationPerson id="377">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="829">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="830">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="831">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="647">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="650">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="653">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="656">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="659">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="662">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="665">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="668">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="671">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="674">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="677">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="680">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="683">
+      <Device device="RADIO_REMAN"/>
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="754">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="755">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="756">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="757">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="758">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="759">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="760">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="761">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="762">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="763">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="764">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="765">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="766">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="767">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="768">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="769">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="770">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="771">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="772">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="773">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="774">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="775">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="776">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="777">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="778">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="779">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="780">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="781">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="782">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="783">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="784">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="785">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="786">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="787">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="788">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="789">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="790">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="791">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="792">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="793">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="794">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="795">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="796">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="797">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="798">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="799">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="800">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="801">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="802">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="803">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="804">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="805">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="806">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="807">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+    <RelationPerson id="808">
+      <Device device="RADIO_REMER"/>
+    </RelationPerson>
+  </CommunicationRelations>
+  <MsgBehaviour>
+  <MsgReceived from="1" content="Establish_Emergency_Level_0">
+ <Msg2Send to="625" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="626" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="627" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="1" content="Establish_Emergency_Level_1">
+ <Msg2Send to="625" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="626" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="627" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="1" content="Establish_Emergency_Level_2">
+ <Msg2Send to="625" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="626" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="627" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="true"/>
+  </MsgReceived>
+  <MsgReceived from="1" content="Establish_Emergency_Level_3">
+ <Msg2Send to="625" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="626" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+ <Msg2Send to="627" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="true"/>
+  </MsgReceived>
+  </MsgBehaviour>
+  <ActionBehaviour>
+  </ActionBehaviour>
+</DecisionMakerBehaviour>

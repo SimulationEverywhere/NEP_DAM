@@ -1,0 +1,122 @@
+<?xml version="1.0" ?>
+<DecisionMakerBehaviour>
+  <Id>22</Id>
+  <Location>Loc_22</Location>
+  <ReactionTime>00:00:10:000</ReactionTime>
+  <AnswerPriorityType> DEVICE_PRIORITY </AnswerPriorityType>
+  <SendPriorityType> RECEPTION_ORDER </SendPriorityType>
+  <MyDevices>
+    <PriorityDevice priority="1" device="RADIOLOGICAL_GROUP_DEVICE" send2Multiple="true" sendSeparateFromReceive="false"/>
+  </MyDevices>
+  <TaskPrioritized>
+    <PriorityTask priority="1" task="ANSWER"/>
+    <PriorityTask priority="2" task="SEND"/>
+    <PriorityTask priority="3" task="DO_ACTION"/>
+  </TaskPrioritized>
+      <AnswerDevicePriority>
+      </AnswerDevicePriority>
+  <CommunicationRelations>
+    <RelationPerson id="13">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="129">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="130">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="131">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="132">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="133">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="134">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="135">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="136">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="137">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="138">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="139">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="140">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="141">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="142">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="143">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="144">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="145">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="146">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="147">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="148">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+    <RelationPerson id="149">
+      <Device device="RADIOLOGICAL_GROUP_DEVICE"/>
+    </RelationPerson>
+  </CommunicationRelations>
+  <MsgBehaviour>
+  <MsgReceived from="13" content="Establish_Emergency_Level_0">
+ <Msg2Send to="129" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="130" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="131" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="138" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="139" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="140" content="Establish_Emergency_Level_0" compulsory="true" send2Multiple="false"/>
+  </MsgReceived>
+  <MsgReceived from="13" content="Establish_Emergency_Level_1">
+ <Msg2Send to="129" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="130" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="131" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="138" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="139" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="140" content="Establish_Emergency_Level_1" compulsory="true" send2Multiple="false"/>
+  </MsgReceived>
+  <MsgReceived from="13" content="Establish_Emergency_Level_2">
+ <Msg2Send to="129" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="130" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="131" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="138" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="139" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="140" content="Establish_Emergency_Level_2" compulsory="true" send2Multiple="false"/>
+  </MsgReceived>
+  <MsgReceived from="13" content="Establish_Emergency_Level_3">
+ <Msg2Send to="129" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="130" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="131" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="138" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="139" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="false"/>
+ <Msg2Send to="140" content="Establish_Emergency_Level_3" compulsory="true" send2Multiple="false"/>
+  </MsgReceived>
+  </MsgBehaviour>
+  <ActionBehaviour>
+  </ActionBehaviour>
+</DecisionMakerBehaviour>
