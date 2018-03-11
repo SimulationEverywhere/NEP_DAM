@@ -10,7 +10,7 @@ The artifacts attached are data and simulation models. The license and the instr
 The project also contains third party libraries. Each of these libraries has its own license.
 
 This project is available in the github repository of SimulationEveryWhere:
-INCLUDE THE LINK ONCE UPLOADED
+https://github.com/SimulationEverywhere/NEP_DAM.git
 
 -------------------------------------------------------------
 System requirements:
