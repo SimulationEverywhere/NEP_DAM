@@ -9,7 +9,7 @@ The model represents the communications established among the first responders i
 The artifacts attached are data and simulation models. The license and the instructions are provided in the root, in the files BSD-LICENSE.txt and Instructions.txt respectively
 The project also contains third party libraries. Each of these libraries has its own license.
 
-This project is available in the github repository of SimulationEveryWhere:
+This project is available in the github repository of Simulation Everywhere:
 https://github.com/SimulationEverywhere/NEP_DAM.git
 
 -------------------------------------------------------------
@@ -20,7 +20,7 @@ RAM 32GB
 https://www.tecmint.com/install-ubuntu-16-04-alongside-with-windows-10-or-8-in-dual-boot/
 -------------------------------------------------------------
 Dependencies:
-	- Boost library for c++	(Instructions sprovided bellow to install Boost)
+	- Boost library for c++	(Instructions provided bellow to install Boost)
 	- Python and the following python libraries must be installed: (Python is already pre-installed in Ubuntu 16.04. You will need to install the libraries following the instructions provided)
  		- pandas 
  		- matplotlib.pyplot
@@ -58,7 +58,7 @@ Install Python libraries
 
 ----------------------------------------------------------------
 Compiler:
-	- The project was compiled and tested using g++7.2. Previous versions of g++ do not work because they can not compile in c++17.
+	- The project was compiled and tested using g++7.2. Previous versions of g++ do not work because they cannot compile in c++17.
 
 ** Instructions to install gcc 7.2 and g++ 7.2 and make them as default compiler:
 	
@@ -195,10 +195,10 @@ STEPS TO REPLICATE THE RESULTS SHOWN IN THE PAPER
 	(3.1) Open a new Ubuntu terminal. To open Ubuntu terminal press: "CONTROL+ALT+t"
 	(3.2) Place the prompt in the folder "scripts". To do so, type on the terminal the following command and press ENTER: cd Documents/NEP_DAM/scripts
 	(3.3) Type on the terminal the following command and press ENTER: make clean; make all
-		The result will be two executables in the folder "scripts": "generateTOPMODEL.out" & "generateDevicesBroken.out"
+		The result will be two executable files in the folder "scripts": "generateTOPMODEL.out" & "generateDevicesBroken.out"
 	(3.4) Place the prompt in the folder "TOPMODEL/resultsProcessed". To do so, type on the terminal the following command and press ENTER: cd ../TOPMODEL/resultsProcessed
 	(3.5) Type on the terminal the following command and press ENTER: make clean; make all
-	The result will be a executable in the folder "TOPMODEL/scripts2run": "ResultsProcessed.out" 
+	The result will be an executable file in the folder "TOPMODEL/scripts2run": "ResultsProcessed.out" 
 (4) Generate the CPP and executable file for the top model
 	(4.1) Place the prompt in the folder "scripts". To do so, type on the terminal the following command and press ENTER: cd ../../scripts
 	(4.2) Type on the terminal the following command and press ENTER: ./generateTOPMODEL.out ../NEPData/Nodes/Subsets/RadiologicalGroup.txt
@@ -213,36 +213,36 @@ STEPS TO REPLICATE THE RESULTS SHOWN IN THE PAPER
 	OPTION 1
 	(5.1) Open a new Ubuntu terminal. To open Ubuntu terminal press: "CONTROL+ALT+t"
 	(5.2) Place the prompt in the folder "TOPMODEL/scripts2run". To do so, type on the terminal the following command and press ENTER: cd Documents/NEP_DAM/TOPMODEL/scripts2run
-	(5.3) To be able to execute the script type on the terminal the following command and press ENTER: chmod +x PaperDAM.sh
+	(5.3) To be able to execute the script, type on the terminal the following command and press ENTER: chmod +x PaperDAM.sh
 	(5.4) To run the simulations and generate the graphs, type on the terminal the following command and press ENTER: ./PaperDAM.sh RADIOLOGICAL_GROUP_DEVICE TOPMODEL.out 149
-	** The simulation will take a couple of days since multiple simulations are generated for different failure probabilities of the device in order to get the 95% confidence interval. When the script finishes, you will find the graphs in the folder "TOPMODEL/resultsProcessed" and the simulation inputs&results in the folder "TOPMODEL/results". 
-	The confidence interval, mean and medium will be the same although the distributions shown in the boxes may vary slighly since the simulations are not deterministic
+	** The simulation will take a couple of days since multiple simulations are generated for different failure probabilities of the device in order to get the 95% confidence interval. When the script finishes, you will find the graphs in the folder "TOPMODEL/resultsProcessed" and the simulation inputs and results in the folder "TOPMODEL/results". 
+	The confidence interval, mean and medium will be the same although the distributions shown in the boxes may vary slightingly since the simulations are not deterministic
 	** If you want to reduce the number of simulations, open the file "PaperDAM.sh" and reduce the number in line 96 and 160.
 	*** If you want to simulate other scenarios (a failure in a different device) you can change RADIOLOGICAL_GROUP_DEVICE by one of the following devices:
-	{MOBILEPHONE, LANDLINEPHONE, PRIVATELINEPHONE, SATELLITE_PHONE, RADIOLOGICAL_GROUP_DEVICE, BEEPER, RADIO_REMAN, RADIO_REMER, EMAIL , FAX, TRANKI_GC, TRANKI_E}
+	{MOBILEPHONE, LANDLINEPHONE, PRIVATELINEPHONE, SATELLITE_PHONE, RADIOLOGICAL_GROUP_DEVICE, BEEPER, RADIO_REMAN, RADIO_REMER, EMAIL, FAX, TRANKI_GC, TRANKI_E}
 	**** If you want to simulate other subset of nodes (NEPHead) make sure you have followed step 4 using NEPHead.txt and in step 5.4 change 149 by 18
 	OPTION 2
 	(5.1) Open a new Ubuntu terminal. To open Ubuntu terminal press: "CONTROL+ALT+t"
 	(5.2) Place the prompt in the folder "TOPMODEL/scripts2run". To do so, type on the terminal the following command and press ENTER: cd Documents/NEP_DAM/TOPMODEL/scripts2run
 	(5.3) To be able to execute the script, type on the terminal the following command and press ENTER: chmod +x PaperDAMRunSimulation.sh
 	(5.4) To run the simulations and generate the graphs, type on the terminal the following command and press ENTER: ./PaperDAMRunSimulation.sh RADIOLOGICAL_GROUP_DEVICE TOPMODEL.out 149
-	** The simulation will take a couple of days since multiple simulations are generated for different failure probabilities of the device in order to ge the 95% confidence interval. When the script finishes, you will find the simulation inputs&results in the folder "TOPMODEL/results"
+	** The simulation will take a couple of days since multiple simulations are generated for different failure probabilities of the device in order to get the 95% confidence interval. When the script finishes, you will find the simulation inputs and results in the folder "TOPMODEL/results"
 	** If you want to reduce the number of simulations, open the file "PaperDAMRunSimulation.sh" and reduce the number in line 96 and 160
 	*** If you want to simulate other scenarios (a failure in a different device) you can change in step 5.4 RADIOLOGICAL_GROUP_DEVICE by one of the following devices:
-	{MOBILEPHONE, LANDLINEPHONE, PRIVATELINEPHONE, SATELLITE_PHONE, RADIOLOGICAL_GROUP_DEVICE, BEEPER, RADIO_REMAN, RADIO_REMER, EMAIL , FAX, TRANKI_GC, TRANKI_E}
+	{MOBILEPHONE, LANDLINEPHONE, PRIVATELINEPHONE, SATELLITE_PHONE, RADIOLOGICAL_GROUP_DEVICE, BEEPER, RADIO_REMAN, RADIO_REMER, EMAIL, FAX, TRANKI_GC, TRANKI_E}
 	**** If you want to simulate other subset of nodes (NEPHead) make sure you have followed step 4 using NEPHead.txt and in step 5.4 change 149 by 18
 	(5.5) To be able to execute the script, type on the terminal the following command and press ENTER: chmod +x PaperDAMProcessResults.sh
 	(5.6) To run the simulations and generate the graphs, type on the terminal the following command and press ENTER: ./PaperDAMProcessResults.sh RADIOLOGICAL_GROUP_DEVICE TOPMODEL.out 149
 	** When the script finishes, you will find the graphs in the folder "TOPMODEL/resultsProcessed"
-	The confidence interval, mean and medium will be the same although the distributions shown in the boxes may vary slighly since the simulations are not deterministic
-	*** Make sure you are using the same device (e.g. RADIOLOGICAL_GROUP_DEVICE) and the same number (e.g 149) as in step 5.4 
+	The confidence interval, mean and medium will be the same although the distributions shown in the boxes may vary slightly since the simulations are not deterministic
+	*** Make sure you are using the same device (e.g. RADIOLOGICAL_GROUP_DEVICE) and the same number (e.g. 149) as in step 5.4 
 
 ----------------------------------------------------
 ADITIONAL INFORMATION: RUN UNIT TESTS FOR THE ATOMIC MODELS
 
 Unit tests for PersonBehavior atomic model
 
-Test1
+Test 1
 (1) Open a new Ubuntu terminal. To open Ubuntu terminal press: "CONTROL+ALT+t"
 (2) Place the prompt in the folder "tests/decisionMaker/unit_test_decision_maker_v2". To do so, type on the terminal the following command and press ENTER: cd Documents/NEP_DAM/tests/decisionMaker/unit_test_decision_maker_v2
 (3) Type on the terminal the following command and press ENTER: make clean; make all
